@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.ipynb_checkpoints/
+*.log
+*.sqlite3
+# never commit interviewer materials
+interviewer-private/
+private/
+answer-key/
+hidden_tests/
+interviewer-notes/

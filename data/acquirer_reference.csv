@@ -1,0 +1,5 @@
+acquirer,base_fee_bps,cross_border_surcharge_bps,base_approval_rate,mean_latency_ms,notes
+ACQ_A,18,8,0.965,78,Low-cost domestic specialist
+ACQ_B,24,5,0.953,108,Cross-border specialist
+ACQ_C,31,3,0.978,62,Premium/high-approval route
+ACQ_D,14,12,0.942,158,Cheapest route but slower and lower approval
