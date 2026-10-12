@@ -16,7 +16,7 @@ DATA_DIR = ROOT / 'data'
 
 
 def load_data():
-    """Load gateway and label data (raw files intentionally contain traps)."""
+    """Load gateway, label, merchant and acquirer data."""
     transactions = pd.read_csv(DATA_DIR / 'transactions_live.csv', parse_dates=['created_at'])
     labels = pd.read_csv(DATA_DIR / 'labels_live.csv', parse_dates=['chargeback_reported_at'])
     merchants = pd.read_csv(DATA_DIR / 'merchants.csv')
@@ -38,12 +38,12 @@ def build_online_features(transactions: pd.DataFrame) -> pd.DataFrame:
 
 
 def split_by_time(frame: pd.DataFrame) -> dict[str, pd.DataFrame]:
-    """Stage 3: chronological train/validation/test/shadow split."""
+    """Stage 3: train/validation/test split."""
     raise NotImplementedError('Stage 3')
 
 
 def train_chargeback_baseline(features_and_labels: pd.DataFrame):
-    """Stage 3: leakage-safe probabilistic risk baseline, with metrics."""
+    """Stage 3: risk baseline, with metrics."""
     raise NotImplementedError('Stage 3')
 
 
@@ -65,12 +65,12 @@ def classify_with_abstention(model, X, threshold: float):
 
 def retrieve_similar(query_vector: np.ndarray, index_vectors: np.ndarray,
                      index_ids: list[str], k: int = 3):
-    """Stage 5: cosine nearest historical examples; never retrieve future examples."""
+    """Stage 5: k most similar indexed examples."""
     raise NotImplementedError('Stage 5')
 
 
 def choose_acquirer(transaction: dict, acquirer_reference: pd.DataFrame) -> str:
-    """Stage 6: justify economic assumptions and selection-bias limitations."""
+    """Stage 6: pick an acquirer for a new payment."""
     raise NotImplementedError('Stage 6')
 
 
