@@ -19,11 +19,13 @@ You are the VP AI/ML lead for a fictional payments platform. Your system process
 |---|
 | 1. Data audit |
 | 2. Online features | 
-| 3. Risk model | 
-| 4. Decision policy | 
-| 5. NLP + embeddings | 
-| 6. Acquirer routing | 
-| 7. Production architecture |
+| [3. Risk model](03_RISK_MODEL.md) |
+| [4. Decision policy](04_DECISION_POLICY.md) |
+| [5. NLP + embeddings](05_NLP_EMBEDDINGS.md) |
+| [6. Acquirer routing](06_ACQUIRER_ROUTING.md) |
+| [7. Production architecture](07_PRODUCTION_ARCHITECTURE.md) |
+
+Stages 3–7 link to reconstructed candidate briefs for preparation. Their original interviewer text is not present in this repository's history; see the README for provenance. An interviewer may choose to release these tasks progressively during a live session.
 
 ## Final submission
 

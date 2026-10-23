@@ -14,7 +14,7 @@ Design and implement a data-to-decision payment intelligence system:
 6. Design smart-acquirer routing and identify historical-policy confounding.
 7. Defend a fault-tolerant low-latency architecture.
 
-This case is intentionally too broad to finish every stage in a 75–90-minute interview. Prioritize correctness, explicit assumptions, verification, and quality of discussion over implementing every feature. The interviewer releases stages progressively.
+This case is intentionally too broad to finish every stage in a 75–90-minute interview. Prioritize correctness, explicit assumptions, verification, and quality of discussion over implementing every feature. An interviewer can still release stages progressively; the reconstructed candidate briefs for Stages 3–7 are now available below for preparation.
 
 ## Quick start
 
@@ -36,9 +36,15 @@ The data smoke test should pass immediately. `src/candidate.py` and `tests/test_
 - [`docs/00_INTERVIEW_OVERVIEW.md`](docs/00_INTERVIEW_OVERVIEW.md): timing, deliverables, AI rules
 - [`docs/01_DATA_AUDIT.md`](docs/01_DATA_AUDIT.md)
 - [`docs/02_ONLINE_FEATURES.md`](docs/02_ONLINE_FEATURES.md)
-- Stages 3–7: released by the interviewer during the session
+- [`docs/03_RISK_MODEL.md`](docs/03_RISK_MODEL.md)
+- [`docs/04_DECISION_POLICY.md`](docs/04_DECISION_POLICY.md)
+- [`docs/05_NLP_EMBEDDINGS.md`](docs/05_NLP_EMBEDDINGS.md)
+- [`docs/06_ACQUIRER_ROUTING.md`](docs/06_ACQUIRER_ROUTING.md)
+- [`docs/07_PRODUCTION_ARCHITECTURE.md`](docs/07_PRODUCTION_ARCHITECTURE.md)
 - [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md)
 - [`docs/08_FINAL_HANDOFF.md`](docs/08_FINAL_HANDOFF.md): final presentation template
+
+**Provenance of Stages 3–7:** These five briefs were reconstructed from the public README, notebook, starter interfaces, data dictionary, and embedding pipeline at commit `84dd430`. The original interviewer briefs are absent from both commits in the repository history. The new briefs specify candidate tasks, not recovered original wording, solutions, hidden tests, or scoring notes. Added interface conventions and evaluation defaults are reconstruction choices; business costs and production SLOs not supplied by the repository remain explicit assumptions.
 
 ## Data included
 
